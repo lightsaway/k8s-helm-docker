@@ -14,7 +14,7 @@ NAMESPACE=`cat /var/run/secrets/kubernetes.io/serviceaccount/namespace`
 docker run --env-file <(printenv | grep KUBE) \
 				-v /var/run/secrets/kubernetes.io/serviceaccount/token:/var/run/secrets/kubernetes.io/serviceaccount/token \
 				-v /var/run/secrets/kubernetes.io/serviceaccount/ca.crt:/var/run/secrets/kubernetes.io/serviceaccount/ca.crt \
-				lightsaway/helm:0.0.7 helm --tiller-namespace=${NAMESPACE} ${ARGS}
+				lightsaway/helm:2.9.1 helm --tiller-namespace=${NAMESPACE} ${ARGS}
 }
 ```
 

@@ -1,5 +1,5 @@
 DOCKER_IMAGE=lightsaway/helm
-HELM_VERSIONS=v2.2.3 v2.3.1 v2.2.1 v2.4.2 v2.5.0 v2.6.0 v2.8.0
+HELM_VERSIONS=2.2.3 2.3.1 2.2.1 2.4.2 2.5.0 2.6.0 2.8.0 2.9.1
 
 
 help:	## to show this help.

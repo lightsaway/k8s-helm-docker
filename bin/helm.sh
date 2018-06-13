@@ -1,12 +1,12 @@
 PROJECT_NAME="helm"
-TAG=${HELM_VERSION:-"v2.2.3"}
+TAG=${HELM_VERSION:-"2.9.1"}
 
 : ${HELM_INSTALL_DIR:="/usr/local/bin"}
 
 # downloadFile downloads the  binary package and also the checksum
 # for that binary.
 downloadFile() {
-  HELM_DIST="helm-$TAG-$OS-$ARCH.tar.gz"
+  HELM_DIST="helm-v$TAG-$OS-$ARCH.tar.gz"
   DOWNLOAD_URL="https://kubernetes-helm.storage.googleapis.com/$HELM_DIST"
   CHECKSUM_URL="$DOWNLOAD_URL.sha256"
   HELM_TMP_FILE="/tmp/$HELM_DIST"
