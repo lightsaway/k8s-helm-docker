@@ -1,4 +1,4 @@
-# Helm Docker Image
+# Helm Docker Image [![Build Status](https://travis-ci.org/lightsaway/k8s-helm-docker.svg?branch=master)](https://travis-ci.org/lightsaway/k8s-helm-docker)
 ## Provides an image with prebuilt and pre-initialized Helm client
 
 ## Running through docker image
@@ -21,4 +21,4 @@ docker run --env-file <(printenv | grep KUBE) \
 *See Makefile on how-to build and push manually*
 
 TODO:
-* provide travis
+* add pushing to docker hub
