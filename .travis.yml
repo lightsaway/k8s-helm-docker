@@ -5,3 +5,9 @@ services:
 
 script: make build test
 
+
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+      docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD ;
+      make push ;
+    fi
