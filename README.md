@@ -1,4 +1,6 @@
-# Helm Docker Image [![Build Status](https://travis-ci.org/lightsaway/k8s-helm-docker.svg?branch=master)](https://travis-ci.org/lightsaway/k8s-helm-docker)
+# Helm Docker Image [![Build Status](https://travis-ci.org/lightsaway/k8s-helm-docker.svg?branch=master)](https://travis-ci.org/lightsaway/k8s-helm-docker) [![Pulls](https://img.shields.io/docker/pulls/lightsaway/helm.svg)](https://hub.docker.com/r/lightsaway/helm/)
+[![Image Details](https://images.microbadger.com/badges/image/lightsaway/helm.svg)](https://hub.docker.com/r/lightsaway/helm/)
+
 ## Provides an image with prebuilt and pre-initialized Helm client
 
 ## Running through docker image
@@ -19,6 +21,3 @@ docker run --env-file <(printenv | grep KUBE) \
 ```
 
 *See Makefile on how-to build and push manually*
-
-TODO:
-* add pushing to docker hub
